@@ -1,17 +1,96 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html dir="ltr"> 
 <head>
-<meta charset="UTF-8">
-<title>Your front-end</title>
+	<style>
+		body{
+			background-color: rgb(226, 185, 173);
+			padding: 0;
+			margin: 0;
+			overflow: hidden;
+			text-align: center;
+			font-family:  sans-serif;
+		}
+		header{
+			background-color: rgba(247,247,247,255);
+			padding: 25px;
+			box-shadow: 0 0 7px #000;
+		}
+		header li{
+			display: inline;
+			padding-left: 45px;
+		}
+		header a{
+			float: inline-start;
+			height: 100%;
+			color: rgb(231, 123, 83);
+			font-size: 60px;
+			font-weight: 300;
+			margin-top: -10px;
+			position: relative;
+		}
+		header a span{
+			font-weight: 800;
+		}
+		header li img{
+			width: 135px;
+			float: right;
+			margin-top: -50px;
+		}
+		div{	
+			margin-top: 1%;
+		}
+		label span{
+			color: black;
+			font-weight: 800;
+		}
+		textarea{
+			margin: 8px;
+			border: none;
+			outline: none;
+			resize: none;
+		}
+		input{
+    		font-size: 10;
+    		padding: 5px 9px;
+    		border-radius: 30px;
+    		background-color:#f0c7c3;
+    		color: rgb(0, 0, 0);
+		}
+	</style>
+	
+	<script src="index.js"></script>
+
+	<meta charset="UTF-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+	<title>http:www</title>
 </head>
 
 <body>
-<form action="/fasttext">
-	Enter your text to be classified<br>
-	<input type="text" name="statement">
-	<input type="submit" value="Submit">
-</form> 
-
+	<header>
+		<a>YUMYUMMY<span>FOOD</span></a>
+		<ul>
+			<li><img src="https://www.pngitem.com/pimgs/m/277-2773471_breakfast-brunch-food-nutrition-breakfast-clipart-png-transparent.png"</li>
+		</ul>
+	</header>
+	<div>
+		<form>
+			<br>
+			<label><span>Food Description</span></label>
+			<div>
+				<textarea id="getValue1" name="textarea_description" rows="8" cols="47"
+				placeholder=  "Write your food description here.."></textarea>
+			</div>
+			<div>
+				<input type="submit" id="button1" value="Submit">
+				<input type="reset" value="Reset">
+			</div>
+			<div>
+				<textarea id="putText" name="output" rows="8" cols="47" readonly
+				placeholder="read from here.."></textarea>
+				<label>label</label>
+			</div>
+		</form>
+	</div>
 </body>
 
 </html> 
